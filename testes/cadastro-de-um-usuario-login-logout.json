@@ -1,0 +1,173 @@
+{
+  "name": "Cadastro de um usuario, Login, Logout",
+  "slug": "cadastro-de-um-usuario-login-logout",
+  "created_at": "2026-09-23T14:00:10",
+  "url_inicial": "https://bugbank.netlify.app/",
+  "steps": [
+    {
+      "action": "click",
+      "text": "Clique em registrar",
+      "value": "",
+      "selector": {
+        "kind": "role",
+        "value": "button",
+        "name": "Registrar",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Registrar",
+      "element_form": "Acessar",
+      "code": "page.get_by_role('button', name='Registrar', exact=True)"
+    },
+    {
+      "action": "fill",
+      "text": "Informar o e-mail qualquerCoisa0001@gmail.com",
+      "value": "qualquerCoisa0001@gmail.com",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe seu e-mail",
+        "name": "",
+        "form": "Cadastrar",
+        "nth": null
+      },
+      "element_name": "Informe seu e-mail",
+      "element_form": "Cadastrar",
+      "code": "page.locator('form:has(button:text-is(\"Cadastrar\"))').get_by_placeholder('Informe seu e-mail', exact=True)"
+    },
+    {
+      "action": "fill",
+      "text": "No campo nome coloque Vinicius Gentile",
+      "value": "Vinicius Gentile",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe seu Nome",
+        "name": "",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Informe seu Nome",
+      "element_form": "Cadastrar",
+      "code": "page.get_by_placeholder('Informe seu Nome', exact=True)"
+    },
+    {
+      "action": "fill",
+      "text": "Informar a senha Teste@123",
+      "value": "Teste@123",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe sua senha",
+        "name": "",
+        "form": "Cadastrar",
+        "nth": null
+      },
+      "element_name": "Informe sua senha",
+      "element_form": "Cadastrar",
+      "code": "page.locator('form:has(button:text-is(\"Cadastrar\"))').get_by_placeholder('Informe sua senha', exact=True)"
+    },
+    {
+      "action": "fill",
+      "text": "Confirmar a senha coloque o seguinte Teste@123",
+      "value": "Teste@123",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe a confirmação da senha",
+        "name": "",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Informe a confirmação da senha",
+      "element_form": "Cadastrar",
+      "code": "page.get_by_placeholder('Informe a confirmação da senha', exact=True)"
+    },
+    {
+      "action": "click",
+      "text": "Clique em cadastrar",
+      "value": "",
+      "selector": {
+        "kind": "role",
+        "value": "button",
+        "name": "Cadastrar",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Cadastrar",
+      "element_form": "Cadastrar",
+      "code": "page.get_by_role('button', name='Cadastrar', exact=True)"
+    },
+    {
+      "action": "click",
+      "text": "Clique em fechar",
+      "value": "",
+      "selector": {
+        "kind": "css",
+        "value": "#btnCloseModal",
+        "name": "",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Fechar",
+      "element_form": "",
+      "code": "page.locator('#btnCloseModal')"
+    },
+    {
+      "action": "fill",
+      "text": "Informar o e-mail qualquerCoisa0001@gmail.com",
+      "value": "qualquerCoisa0001@gmail.com",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe seu e-mail",
+        "name": "",
+        "form": "Acessar",
+        "nth": null
+      },
+      "element_name": "Informe seu e-mail",
+      "element_form": "Acessar",
+      "code": "page.locator('form:has(button:text-is(\"Acessar\"))').get_by_placeholder('Informe seu e-mail', exact=True)"
+    },
+    {
+      "action": "fill",
+      "text": "Informar a senha Teste@123",
+      "value": "Teste@123",
+      "selector": {
+        "kind": "placeholder",
+        "value": "Informe sua senha",
+        "name": "",
+        "form": "Acessar",
+        "nth": null
+      },
+      "element_name": "Informe sua senha",
+      "element_form": "Acessar",
+      "code": "page.locator('form:has(button:text-is(\"Acessar\"))').get_by_placeholder('Informe sua senha', exact=True)"
+    },
+    {
+      "action": "click",
+      "text": "Clique em acessar",
+      "value": "",
+      "selector": {
+        "kind": "role",
+        "value": "button",
+        "name": "Acessar",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Acessar",
+      "element_form": "Acessar",
+      "code": "page.get_by_role('button', name='Acessar', exact=True)"
+    },
+    {
+      "action": "click",
+      "text": "Clique em sair",
+      "value": "",
+      "selector": {
+        "kind": "css",
+        "value": "#btnExit",
+        "name": "",
+        "form": "",
+        "nth": null
+      },
+      "element_name": "Sair",
+      "element_form": "",
+      "code": "page.locator('#btnExit')"
+    }
+  ]
+}

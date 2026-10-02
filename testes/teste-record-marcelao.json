@@ -1,0 +1,106 @@
+{
+  "name": "Teste Record Marcelão",
+  "slug": "teste-record-marcelao",
+  "created_at": "2026-10-01T16:04:00",
+  "url_inicial": "https://bugbank.netlify.app/",
+  "items": [
+    {
+      "kind": "step",
+      "step": {
+        "action": "fill",
+        "text": "preencher \"Informe seu e-mail\"",
+        "value": "vinicius_gentile@hotmail.com",
+        "selector": {
+          "kind": "placeholder",
+          "value": "Informe seu e-mail",
+          "name": "",
+          "form": "Acessar",
+          "nth": null,
+          "exact": true
+        },
+        "element_name": "Informe seu e-mail",
+        "element_form": "Acessar",
+        "code": "page.locator('form:has(button:text-is(\"Acessar\"))').get_by_placeholder('Informe seu e-mail', exact=True)",
+        "url": "https://bugbank.netlify.app/"
+      },
+      "block": ""
+    },
+    {
+      "kind": "step",
+      "step": {
+        "action": "fill",
+        "text": "preencher \"Informe sua senha\"",
+        "value": "teste123",
+        "selector": {
+          "kind": "placeholder",
+          "value": "Informe sua senha",
+          "name": "",
+          "form": "Acessar",
+          "nth": null,
+          "exact": true
+        },
+        "element_name": "Informe sua senha",
+        "element_form": "Acessar",
+        "code": "page.locator('form:has(button:text-is(\"Acessar\"))').get_by_placeholder('Informe sua senha', exact=True)",
+        "url": "https://bugbank.netlify.app/"
+      },
+      "block": ""
+    },
+    {
+      "kind": "step",
+      "step": {
+        "action": "click",
+        "text": "clicar em \"Acessar\"",
+        "value": "",
+        "selector": {
+          "kind": "role",
+          "value": "button",
+          "name": "Acessar",
+          "form": "",
+          "nth": null,
+          "exact": true
+        },
+        "element_name": "Acessar",
+        "element_form": "Acessar",
+        "code": "page.get_by_role('button', name='Acessar', exact=True)",
+        "url": "https://bugbank.netlify.app/"
+      },
+      "block": ""
+    },
+    {
+      "kind": "step",
+      "step": {
+        "action": "expect_text",
+        "text": "validar \"Usuário ou senha inválido. Tente novamente ou verifique suas informações!\"",
+        "value": "Usuário ou senha inválido. Tente novamente ou verifique suas informações!",
+        "selector": null,
+        "element_name": "",
+        "element_form": "",
+        "code": "expect(page.get_by_text('Usuário ou senha inválido. Tente novamente ou verifique suas informações!')).to_be_visible()",
+        "url": "https://bugbank.netlify.app/"
+      },
+      "block": ""
+    },
+    {
+      "kind": "step",
+      "step": {
+        "action": "click",
+        "text": "clicar em \"Fechar\"",
+        "value": "",
+        "selector": {
+          "kind": "css",
+          "value": "#btnCloseModal",
+          "name": "",
+          "form": "",
+          "nth": null,
+          "exact": true
+        },
+        "element_name": "Fechar",
+        "element_form": "",
+        "code": "page.locator('#btnCloseModal')",
+        "url": "https://bugbank.netlify.app/"
+      },
+      "block": ""
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# --- frontend React ---
+frontend/node_modules/
+qai/web/dist/

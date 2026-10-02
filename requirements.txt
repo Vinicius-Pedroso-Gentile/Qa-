@@ -1,0 +1,16 @@
+# --- LLM local + orquestracao ---
+langchain-core>=1.0.0
+langchain-ollama>=1.1.0
+langgraph>=1.2.0
+langsmith>=0.12.0
+
+# --- Automacao do browser ---
+playwright>=1.63.0
+
+# --- Servidor web ---
+fastapi>=0.115.0
+uvicorn>=0.32.0
+
+# --- Suporte ---
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
